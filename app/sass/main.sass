@@ -1,0 +1,996 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Roboto', sans-serif
+
+.btn 
+	border: 1px solid #23C9ED
+	display: block
+	border-radius: 20px
+	color: #FFFFFF
+	text-decoration: none
+	font-weight: bold
+	text-align: center
+
+	&:hover 
+		background: #23C9ED
+
+.btn-color
+	background: #23C9ED
+	border-radius: 20px
+	font-weight: bold
+	color: #FFFFFF
+	display: block
+	text-align: center
+	text-decoration: none
+	border: 1px solid #23C9ED
+
+	&:hover 
+		background-color: transparent
+
+button 
+	&:focus 
+		outline: none
+
+
+.wrapper 
+	max-width: 765px
+	margin: 0 auto
+
+
+.img-hover, .img-hover__big
+	overflow: hidden
+	width: 177px
+	height: 180px
+	cursor: pointer
+
+	img
+		-moz-transition: all 1s ease-out
+ 		-o-transition: all 1s ease-out
+ 		-webkit-transition: all 1s ease-out
+
+		&:hover
+			-webkit-transform: scale(1.1)
+ 			-moz-transform: scale(1.1)
+			-o-transform: scale(1.1)
+
+.img-hover__big
+	width: 374px
+	height: 235px
+	overflow: hidden
+	cursor: pointer
+
+
+
+h2
+	font-weight: bold
+	font-size: 38px
+	line-height: 45px
+	color: #FFFFFF
+
+h3 
+	font-weight: bold
+	font-size: 34px
+	line-height: 40px
+	color: #141414
+
+h4 
+	font-weight: 900
+	font-size: 32px
+	line-height: 37px
+	color: #141414
+
+h5 
+	font-weight: bold
+	font-size: 20px
+	line-height: 23px
+	color: #141414
+
+h6 
+	font-weight: bold
+	font-size: 18px
+	line-height: 21px
+	color: #141414
+
+p 
+	font-weight: 300
+	font-size: 14px
+	line-height: 24px
+	color: #141414
+
+
+input 
+	border: 0
+	border-bottom: 1px solid #FFFFFF
+	background-color: transparent
+	font-weight: bold
+	font-size: 14px
+	line-height: 19px
+	color: #FFFFFF
+
+input[type="submit"]
+	background: #23C9ED
+	border: 1px solid #23C9ED
+	border-radius: 20px
+	font-weight: bold
+	font-size: 16px
+	line-height: 19px
+	cursor: pointer
+
+	&:hover 
+		background: transparent
+
+.kalkulator
+	width: 358px
+	height: 463px
+	background-image: url('../img/bg-kalck.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: contain
+	box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25)
+
+	h2 
+		padding: 59px 57px 10px 57px
+		font-size: 32px
+		line-height: 40px
+		text-align: center
+
+	p 
+		font-weight: 300
+		font-size: 12px
+		line-height: 20px
+		color: #FFFFFF
+		text-align: center
+		width: 187px
+		margin: 0 auto
+
+	form
+		margin: 0 33px
+		padding-top: 25px
+
+		div 
+			display: flex
+			justify-content: space-between
+
+			select
+				width: 48%
+				margin-top: 20px
+
+			a
+				width: 144px
+				height: 40px
+				line-height: 38px
+				margin-top: 12px
+
+	select
+		display: block
+		background: transparent
+		border: 0
+		border-bottom: 1px solid #FFFFFF
+		color: #FFFFFF
+		font-weight: bold
+		font-size: 12px
+		line-height: 16px
+		font-family: 'Roboto', sans-serif
+		width: 100%
+		height: 26px
+		outline: none
+
+		option
+			background: #061B45
+
+
+	.kalkulator-result
+		color: #23C9ED
+		font-weight: 900
+		font-size: 26px
+		line-height: 40px
+		margin-top: 15px
+
+//Slider 
+.reviews
+	.slick-prev, .slick-next
+		top: auto
+		bottom: -16px
+
+	.slick-prev
+		left: 0px
+		width: 45px
+		height: 32px
+		background: white
+		background-image: url('../img/prev.svg')
+		background-repeat: no-repeat
+		background-position: 20px center
+
+	.slick-next
+		left: 44px
+		width: 45px
+		height: 32px
+		background: white
+		background-image: url('../img/next.svg')
+		background-repeat: no-repeat
+		background-position: 15px center
+
+	.slick-prev:before, .slick-next:before
+		content: ''
+
+	.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus
+		background: white
+
+
+	.slick-prev:hover, .slick-prev:focus
+		background-image: url('../img/prev.svg')
+		background-repeat: no-repeat
+		background-position: 20px center
+
+	.slick-next:hover, .slick-next:focus
+		background-image: url('../img/next.svg')
+		background-repeat: no-repeat
+		background-position: 15px center
+
+
+		
+
+
+header
+	background-image: url('../img/bg-header.png')
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	height: 760px
+	position: relative
+
+header, footer
+
+	.header-top
+		max-width: 1125px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		height: 50px
+		align-items: center
+
+	.header-logo
+		img 
+			width: 107px
+			height: 31px
+
+	.header-nav
+		ul 
+			display: flex
+			list-style: none
+			width: 355px
+			justify-content: space-between
+
+			li 
+				a 
+					color: #FFFFFF
+					font-size: 12px
+					line-height: 14px
+					text-decoration: none
+
+					&:hover
+						color: #23C9ED
+
+	.header-contacts
+		display: flex
+		a
+			&:nth-child(1)
+				font-size: 12px
+				line-height: 14px
+				color: #C3C3C3
+				display: flex
+				align-items: center
+				text-decoration: none
+
+				&:before
+					content: url('../img/phone.svg')
+					display: block
+					width: 13px
+					height: 13px
+					margin-right: 10px
+
+				&:after 
+					content: ''
+					display: block
+					height: 16px
+					border-left: 1px solid #FFFFFF
+					margin-left: 15px
+					margin-right: 16px
+
+				&:hover 
+					color: #23C9ED
+
+		.btn
+			width: 121px
+			height: 29px
+			font-size: 10px
+			line-height: 29px
+
+header
+
+	.header-main
+		.wrapper
+			display: flex
+			padding-top: 90px
+			justify-content: space-between
+
+	.header-main__text
+		img
+			width: 333px
+			height: 152px
+			margin: 20px 0
+
+		p 
+			font-weight: bold
+			font-size: 18px
+			color: #FFFFFF
+			line-height: 24px
+			width: 239px
+			border-left: 1px solid #FFFFFF
+			padding-left: 15px
+
+		.btn-color
+			width: 144px
+			height: 40px
+			font-weight: bold
+			font-size: 18px
+			line-height: 40px
+			margin-top: 20px
+
+.about
+	margin-bottom: 74px
+
+	.wrapper
+		display: flex
+		justify-content: space-between
+
+	.about-company
+		h2 
+			color: #141414
+			padding-top: 23px
+			padding-bottom: 16px
+
+		p
+			max-width: 339px
+			margin-bottom: 50px
+
+	.about-task
+		display: flex
+		flex-wrap: wrap
+		max-width: 346px
+
+		.about-task__head 
+			width: 48%
+			padding-top: 48px
+
+			h6 
+				padding-top: 15px
+
+		img
+			width: 177px
+			height: 180px
+			margin-top: -16px
+			margin-bottom: 15px
+
+	.about-task__ced
+		width: 280px
+		height: 197px
+		margin-top: 50px
+		margin-left: 23px
+		background-image: url('../img/task-bg.png')
+		background-repeat: no-repeat
+		background-position: 8px center
+		padding-top: 23px
+
+		.about-task__item
+			display: flex
+			margin-bottom: 13px
+
+			&:nth-child(2)
+				background: radial-gradient(114.69% 114.69% at 50% -6.29%, rgba(255, 255, 255, 0) 0%, #FFFFFF 38.54%, #FFFFFF 67.07%, rgba(255, 255, 255, 0.1) 100%)
+
+			div 
+				margin-left: 42px
+
+.indicators
+	text-align: center
+	padding-bottom: 7px
+	p 
+		max-width: 407px
+		margin: 0 auto
+		padding-top: 15px
+		padding-bottom: 29px
+
+	.indicators-key
+		display: flex
+		justify-content: space-between
+
+	.key-number
+		width: 125px
+		height: 125px
+		background-image: url('../img/ellipse.png')
+		position: relative
+		color: #061B45
+		line-height: 125px
+		font-size: 40px
+		font-weight: bold
+
+		&:before
+			content: ''
+			display: block
+			width: 12.87px
+			height: 12.87px
+			background: #FFFFFF
+			transform: rotate(32.49deg)
+			position: absolute
+			right: 12px
+			top: 10px
+
+	.indicators-key__item
+		width: 172px
+
+		h6 
+			font-weight: bold
+			font-size: 14px
+			line-height: 24px
+			margin-top: 11px
+
+		p 
+			padding-top: 0
+
+
+.bussiness-plan
+	background-image: url('../img/bg-business.png')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 216px
+	background-position: center
+
+	.wrapper
+		max-width: 677px
+
+	.bussiness-plan__head
+		display: flex
+		padding-bottom: 30px
+
+		h3 
+			width: 318px
+			color: #FFFFFF
+			padding-right: 59px
+			border-right: 1px solid #FFFFFF
+
+			span
+				font-weight: 300
+
+		p 
+			width: 315px
+			padding-left: 30px
+			font-size: 18px
+			line-height: 24px
+			color: #FFFFFF
+			display: flex
+			align-items: center
+			font-weight: normal
+
+	.bussiness-plan__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-bottom: 222px
+
+		.bussiness-plan__step
+			width: 30%
+			padding-bottom: 44px
+
+			div 
+				display: flex
+
+				p
+					&:nth-child(1)
+						font-weight: 900
+						font-size: 50px
+						line-height: 59px
+						color: #FFFFFF
+
+					&:nth-child(2)
+						color: #23C9ED
+						font-weight: 900
+						font-size: 22px
+						line-height: 26px
+						padding-left: 5px
+			h6 
+				font-weight: 900
+				font-size: 14px
+				line-height: 20px
+				color: #23C9ED
+				margin-top: 5px
+
+			p 
+				color: #FFFFFF
+				max-width: 159px
+
+.reviews
+	.wrapper
+		display: flex
+		max-width: 755px
+		padding-bottom: 45px
+		position: relative
+
+		.number-slider
+			position: absolute
+			bottom: 20px
+			right: 0
+
+			p 
+				font-weight: bold
+				font-size: 14px
+				line-height: 20px
+		h2 
+			color: #141414
+			width: 210px
+			margin-bottom: 10px
+
+		.reviews-head
+			margin-right: 81px
+			p 
+				font-size: 16px
+				width: 220px
+
+	.reviews-slider
+		background: #ECECEC
+		padding: 29px 28px 58px 29px
+		width: 454px
+
+		.reviews-name
+			display: flex
+
+
+		.photo
+			width: 60px
+			height: 60px
+			min-width: 60px
+			background: #CECECE
+			margin-right: 15px
+
+		.reviews-text
+			display: flex
+			margin-top: 12px
+
+			p 
+				margin-top: 0px
+
+
+			img 
+				width: 60px
+				height: 53px
+				margin-right: 15px
+
+.slick-initialized .slick-slide
+	&:focus 
+		outline: none
+
+.resolute
+	background-image: url('../img/resolute-bg.png')
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+	.wrapper
+		display: flex
+		padding-top: 49px
+		justify-content: space-between
+
+		.resolute-form
+			width: 358px
+			height: 463px
+			background-repeat: no-repeat
+			background-image: url('../img/bg-form.png')
+			padding: 129px 33px 81px 33px
+			margin-bottom: 144px
+
+			form 
+				text-align: center
+
+			input	
+				width: 100%
+				height: 29px
+				margin-top: 20px
+				padding-bottom: 10px
+
+				&::placeholder 
+					color: white
+
+				&::-moz-placeholder
+					color: white
+
+			input[type="submit"]
+				width: 182px
+				height: 40px
+				margin: 0 auto
+				margin-top: 30px
+				line-height: 40px
+
+
+			p 
+				font-size: 10px
+				line-height: 13px
+				color: #C3C3C3
+				font-weight: normal
+				width: 160px
+				margin: 0 auto
+				margin-top: 30px
+				display: flex
+
+				&:before 
+					content: url('../img/form.svg')
+					margin-right: 10px
+
+		.resolute-head
+			width: 255px
+			padding-top: 192px
+
+			h3 	
+				color: #FFFFFF
+				margin-bottom: 25px
+
+				span 
+					font-weight: 300
+
+			p 
+				color: #FFFFFF
+				font-weight: normal
+				font-size: 18px
+				border-left: 1px solid #FFFFFF
+				padding-left: 20px
+
+footer
+	height: 94px 
+	.header-nav ul li a
+		color: #000000
+
+	.btn-color
+		width: 121px
+		height: 29px
+		font-weight: bold
+		font-size: 10px
+		line-height: 29px
+
+		&:hover 
+			color: #141414
+
+.toggle
+	display: none
+
+@media (max-width: 769px)
+
+	h2 
+		font-size: 34px
+		line-height: 40px
+
+	h3 
+		font-size: 30px
+		line-height: 35px
+
+	header
+		background-image: url('../img/header-bg-mob.png')
+		height: 973px
+
+	.toggle
+		display: block
+		background: url('../img/burger.svg')
+		background-repeat: no-repeat
+		background-position: center
+		width: 25px
+		height: 25px
+		border: 0
+
+	.close 
+		background: url('../img/close.png')
+		background-position: center
+		background-size: contain
+		background-repeat: no-repeat
+
+	.header-nav, header .header-contacts
+		display: none
+
+	.nav-mob
+		position: absolute
+		width: 90%
+		background: #061B45
+		top: 55px
+		z-index: 1000
+		padding-bottom: 20px
+		overflow: hidden
+
+		nav 
+			ul 
+				flex-wrap: wrap
+				 
+				li 
+					width: 100%
+
+
+	.wrapper, header .header-top
+		width: 100%
+		padding: 0 17px
+
+	.header-main .wrapper
+		padding-top: 53px
+		flex-wrap: wrap
+
+	.header-main__text
+		width: 100%
+
+	header .header-main__text img
+		width: 267px
+		height: 128px
+
+	header .header-main__text .btn-color
+		margin-bottom: 60px
+
+	.kalkulator
+		width: 290px
+		height: 388px
+
+		h2 
+			padding: 39px 38px 15px 38px
+			font-size: 28px
+			line-height: 36px
+
+	.kalkulator form
+		padding-top: 20px
+
+	.kalkulator .kalkulator-result
+		margin-top: 10px
+
+	.kalkulator form div a
+		margin-top: 0
+
+	.about
+		margin-bottom: 70px
+	.about .wrapper
+		padding-top: 53px
+		flex-wrap: wrap
+
+		h2 
+			font-size: 30px
+			line-height: 35px
+
+	.about .about-company p
+		max-width: 100%
+		margin-bottom: 30px
+
+	.about .about-company img 
+		width: 100%
+
+	.about .about-task__ced
+		order: 1
+		margin-left: 10px
+
+	.about .about-task .about-task__head
+		order: 2
+
+	.about .about-task .img-hover
+		order: 4
+
+	.about .about-task p 
+		order: 3
+		padding-top: 15px
+		width: 100%
+
+	.about .about-task .about-task__head
+		padding-top: 56px
+		width: 100% 
+
+	.about .about-task img
+		margin-top: 15px
+
+	.about .about-task
+		max-width: 100%
+
+	.about .about-task__ced .about-task__item div
+		margin-left: 39px
+
+		h6
+			font-size: 14px
+			line-height: 24px
+
+	.about .about-task .about-task__item p
+		padding-top: 0
+
+	.about .about-task__ced .about-task__item
+		margin-bottom: 8px
+
+	.about .about-task img
+		width: 100%
+		height: auto
+
+	.indicators p
+		padding-bottom: 29px
+
+	.indicators .indicators-key
+		flex-wrap: wrap
+
+	.indicators .indicators-key__item
+		width: 143px
+
+	.img-hover__big
+		width: 100%
+		height: auto
+
+	.indicators .key-number
+		width: 115px 
+		height: 115px
+		background-size: contain
+
+	.indicators
+		padding-bottom: 38px
+
+	.bussiness-plan
+		background-image: url('../img/businessplanmob.png')
+		background-position: top center
+		background-size: cover
+		background-repeat: no-repeat
+		padding-top: 85px
+
+	.bussiness-plan .bussiness-plan__head
+		flex-wrap: wrap
+
+		h3 
+			border: 0
+
+	.bussiness-plan .bussiness-plan__head p
+		padding-left: 9px
+		border-left: 1px solid #FFFFFF
+		margin-top: 15px
+
+	.bussiness-plan .bussiness-plan__list .bussiness-plan__step
+		width: 100%
+
+	.bussiness-plan .bussiness-plan__list .bussiness-plan__step p
+		max-width: 100%
+
+	.bussiness-plan .bussiness-plan__list .bussiness-plan__step
+		padding-bottom: 15px
+
+	.bussiness-plan .wrapper
+		max-width: 100%
+		padding: 0 15px
+
+	.bussiness-plan .bussiness-plan__list
+		padding-bottom: 110px
+
+	.reviews .wrapper .reviews-head
+		padding-top: 41px
+		margin-right: 0
+		width: 100%
+
+		h2 
+			font-size: 30px
+			line-height: 35px
+			text-align: center
+			margin: 0 auto
+			margin-bottom: 10px
+
+	.reviews .wrapper .reviews-head p
+		margin: 0 auto
+		text-align: center
+		font-size: 14px
+
+	.reviews .wrapper 
+		flex-wrap: wrap
+
+	.reviews .reviews-slider
+		margin-top: 11px
+		padding: 25px 13px 0px 25px
+		width: 100%
+
+	.reviews .slick-prev
+		left: auto
+		right: 40px
+
+	.reviews .wrapper .number-slider
+		display: none
+
+	.reviews .slick-next
+		left: auto
+		right: 0
+
+	.reviews .reviews-slider .photo
+		width: 40px
+		height: 40px
+		min-width: 40px
+		margin-right: 10px
+
+	.reviews .reviews-slider .reviews-text img
+		order: 2
+		width: 36px
+		height: 32px
+		margin-top: 10px
+		margin-bottom: 10px
+
+	.reviews .reviews-slider .reviews-text p
+		margin-top: 11px
+
+	.reviews .reviews-slider .reviews-text
+		flex-wrap: wrap
+
+	.resolute .wrapper
+		flex-wrap: wrap
+
+	.resolute
+		background-image: url('../img/resolutemob.png')
+		background-size: cover
+		background-position: top center
+
+	.resolute .wrapper .resolute-head
+		padding-top: 23px
+
+	.resolute .wrapper .resolute-head h3
+		margin-bottom: 16px
+
+	.resolute .wrapper .resolute-form
+		margin-top: 20px
+		width: 289px
+		height: 343px
+		background-image: url('../img/form-mob.png')
+		padding: 35px 33px 55px 33px
+		margin-bottom: 55px
+
+	.resolute .wrapper .resolute-form input[type="submit"]
+		margin-top: 20px
+
+	.resolute .wrapper .resolute-form p
+		margin-top: 20px
+
+	footer
+		height: 349px
+		padding-top: 40px
+		width: 100%
+
+
+		.header-top
+			flex-wrap: wrap
+			justify-content: center
+			max-width: 100%
+
+		.header-logo
+			margin-bottom: 30px
+
+
+		.header-nav ul
+			flex-wrap: wrap
+			width: 100%
+
+			li 
+				width: 100%
+				text-align: center
+
+		.header-nav, header .header-contacts
+			display: block
+
+		.header-contacts
+			margin-top: 30px
+
+		.header-nav ul li a
+			font-weight: bold
+			font-size: 16px
+			line-height: 30px
+			color: #000000
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	
